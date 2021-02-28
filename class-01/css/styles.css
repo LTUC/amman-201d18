@@ -1,0 +1,30 @@
+#demo{
+  border: seagreen;
+  border-radius: 20px;
+  border-style: groove;
+}
+.nav-item{
+  font-weight: bolder;
+  display: inline-block;
+  margin: 10px;
+}
+/* a:link{
+  color: hotpink;
+} */
+a:visited{
+  color: hotpink;
+}
+a{
+  text-decoration: none;
+
+}
+nav{
+  background-color: gray;
+}
+
+#greet{
+  border: sienna;
+  border-style: solid;
+  padding: 15px;
+  display: inline-block;
+}
