@@ -1,0 +1,19 @@
+#one {
+  font-family: Helvetica, sans-serif;
+  color: lightcoral;
+  background: lightblue;
+}
+
+#two {
+  font-family: Helvetica, sans-serif;
+  color: lightskyblue;
+  background: lightcoral;
+}
+
+#one a {
+  color: #331fe0;
+}
+
+#two a {
+  color: #e1341e;
+}

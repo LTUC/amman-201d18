@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.row :first-child {
+  background-color: rgb(216, 67, 67);
+  background-color: #aaa;
+}
+.row :nth-child(2) {
+  background-color: #bbb;
+}
+.row :nth-child(3) {
+  background-color: #ccc;
+}
+.column {
+  float: left;
+  /* height: 80vh; */
+  padding: 20px;
+  width: 33.33%;
+}
+
+footer {
+  background-color: #f1f1f1;
+  clear: both;
+  padding: 15px;
+  text-align: center;
+}
