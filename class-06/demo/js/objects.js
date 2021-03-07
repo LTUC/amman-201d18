@@ -1,25 +1,48 @@
-let students = [];
-let student1 = {
-  name: 'zuhair',
-  age: 25,
-  isEnrolled: true,
-  clases: ['101d18', '102d20', '201d16'],
-  '1x': true,
-  'full name': 'test test',
-  obj: { id: 1, name: 'x' },
-};
-students.push(student1);
-let studentName = 'name';
-console.log(studentName);
-console.log(student1.age);
-console.log(student1['age']);
-console.log(student1.studentName);
-console.log(student1[studentName]); // student1['name']
-// console.log(student1.1x)
-console.log(student1['1x']);
-// console.log(student1.full name)
-console.log(student1['full name']);
-console.log(student1);
-console.log(typeof student1);
-console.log(typeof []);
-console.log(Array.isArray([]));
+// let merecedes={
+//   color:'black',
+//   year:2020,
+//   type:'merecedes',
+//   model:'E200',
+//   drive:function(){
+//     console.log('the mercedes is driving now');
+//   },
+//   topSellingCountries:['Germany','UK','Jordan'],
+//   spareParts:{
+//     wheel:2,
+//     leatherCover:true,
+//     logo:2,
+//   }
+
+// };
+
+// let bmw={
+//   color:'white',
+//   year:2015,
+//   type:'bmw',
+//   model:'520',
+//   drive:function(){
+//     console.log('the bmw is driving now');
+//   },
+//   topSellingCountries:['Germany','KSA','Dubai'],
+//   spareParts:{
+//     wheel:1,
+//     leatherCover:false,
+//     logo:3,
+//   }
+
+// };
+
+// console.log(car.drive());
+// console.log(car.model);
+// console.log(car.type);
+// console.log(car.topSellingCountries[2]);
+// for(let i=0;i<car.topSellingCountries.length;i++){
+//   console.log(car.topSellingCountries[i]);
+// }
+// console.log(car.spareParts.leatherCover);
+// console.log(car.spareParts.logo);
+// console.log(car.spareParts.wheel);
+// access properties using dot notation
+// console.log(bmw.type);
+// access properties using bracket notation
+// console.log(merecedes.drive());

@@ -1,73 +1,65 @@
 'use strict';
-// problem domain: the Seattle Kitten Rescue has tons of kittens who need good homes. One of the best ways to reach prospective adoptive homes is to have profiles for each kitten available on a website. There are hundreds of kittens, though, and only a few volunteers; it's too time-consuming to hand-code each kitten's profile on their website. They need a better way.
+// DOM(Document Object Model)
+// document.write('<h2>Hello im added from the document object </h2>');
+// console.log(document);
+// console.log(Math.random());
+// let driverName='Issa';
 
-// Each kitten's profile should have:
-// - name
-// - random age assigned
-// - a list of what they like (eg: cuddling, chasing string, napping, food)
-// - an image
-// good with kids
-// good with dogs
-// good with other cats
-// breed (e.g: Egyptian Mau, Persian,British Shorthair)
-
-// TODO: dynamically generate kitten objects using form data
-console.log('outside the object', this);
-const frankie = {
-  name: 'Frankie',
-  age: 0,
-  likes: ['cuddling', 'chasing string', 'napping'],
-  goodWithOtherCats: true,
-  goodWithKids: false,
-  goodWithDogs: false,
-  breed: 'British Short hair',
-  imagePath: './images/frankie.jpeg',
-  getAge: function (min, max) {
-    console.table(this);
-    this.age = getRandomNumber(min, max);
+let bmw={
+  color:'white',
+  year:2015,
+  type:'bmw',
+  model:'520',
+  milage:0,
+  image:'https://upload.wikimedia.org/wikipedia/commons/b/bf/2018_BMW_520d_M_Sport_Automatic_2.0_%281%29.jpg',
+  drive:function(){
+    console.log('the bmw is driving now');
   },
-  render: function () {
-    const container = document.getElementById('kitten-profiles');
-    console.log(container);
-    /*
-       <!-- <article>
-          <h2>frankie</h2>
-          <p>Frankie is adorable, and is 4 months old.</p>
-          <ul>
-            <li>cuddling</li>
-            <li>chasing string</li>
-          </ul>
-          <img src="images/frankie.jpeg" />
-        </article> -->
-    */
-    //1 create element
-    //2 append the element to its parent
-    //3 add text content to the element || attributes
-    const articleEl = document.createElement('article');
-    container.appendChild(articleEl);
-    const h2El = document.createElement('h2');
-    articleEl.appendChild(h2El);
-    h2El.textContent = this.name;
-    const pEl = document.createElement('p');
-    articleEl.appendChild(pEl);
-    pEl.textContent = `${this.name} is adorable and is ${this.age} months old.`;
-    const ulEl = document.createElement('ul');
-    articleEl.appendChild(ulEl);
-    for (let i = 0; i < this.likes.length; i++) {
-      const liEl = document.createElement('li');
-      ulEl.appendChild(liEl);
-      liEl.textContent = this.likes[i];
-    }
-    const imgEl = document.createElement('img');
-    articleEl.appendChild(imgEl);
-    imgEl.setAttribute('src', this.imagePath);
+  getData:function(){
+    let bmwType=this.type;
+    let bmwModel=this.model;
+    return bmwType+':'+bmwModel;
   },
+  topSellingCountries:['Germany','KSA','Dubai'],
+  spareParts:{
+    wheel:1,
+    leatherCover:false,
+    logo:3,
+  },
+  setMilage:function(){
+    let carMilage=this.milage;
+    carMilage=randomGenerator(20,30);
+    return carMilage;
+  }
 };
-// helper functions
 
-function getRandomNumber(min, max) {
+let main=document.getElementById('demo');
+
+let unorderedList=document.createElement('ul');
+let type=document.createElement('li');
+let year=document.createElement('li');
+let color=document.createElement('li');
+
+type.innerText=bmw.getData();
+year.innerText=bmw.year;
+color.innerText=bmw.color;
+type.setAttribute('class','list-item');
+unorderedList.appendChild(type);
+unorderedList.appendChild(year);
+unorderedList.appendChild(color);
+
+main.appendChild(unorderedList);
+let carImage=document.createElement('img');
+carImage.setAttribute('src',bmw.image);
+main.appendChild(carImage);
+
+// console.log(unorderedList);
+
+// please javascript create a ul adn inside the ul put 3 li's
+// <ul><li></li></ul>
+function randomGenerator(min,max){
+  // Random function gives us random number between 0-1
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+console.log(bmw.setMilage());
 
-console.log(frankie.getAge(3, 10));
-frankie.render();
