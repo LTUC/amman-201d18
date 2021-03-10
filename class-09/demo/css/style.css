@@ -1,38 +1,11 @@
-* {
-  font-family: 'Indie Flower', cursive;
-}
-body {
-  background-color: #f3f3f3;
-}
-header {
-  background-color: cadetblue;
-  padding: 20px;
+button{
+  margin: 5px;
+  background: red;
+  border-color: red;
+  border-radius: 20px;
+  color: #fff;
 }
 
-header h1 {
-  color: #eee;
-  text-align: center;
-}
-
-main {
-  margin: 20px;
-}
-
-main h2 {
-  margin-bottom: 10px;
-  font-size: larger;
-  font-weight: revert;
-}
-main section ul {
-  list-style: inside;
-}
-
-img {
-  margin-top: 20px;
-}
-
-table,
-th,
-td {
-  border: 1px solid black;
+fieldset{
+  display: inline-block;
 }

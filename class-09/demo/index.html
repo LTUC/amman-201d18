@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Adopt a Kitten</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <h1>Adopt a Kitten</h1>
-    </header>
-    <main>
-      <h2>Kittens Available for Adoption:</h2>
-      <form id="cats-form">
-        <fieldset>
-          <legend>Basic info</legend>
-          <label for="name">Name</label>
-          <input type="text" id="name" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h2>Events and forms</h2>
+  <!-- <form id="carsForm">
+    <label for="carInput">Car name:</label>
+    <input type="text" name="carName" placeholder="car name">
+    <input type="submit" value="add car" >
+  </form>
+  <button id="bmwButton">remove</button>
+  <ul id='carList'>
+    <li id="bmwCar">Bmw</li>
+    <li>mercedes</li>
+    <li>Honda</li>
+  </ul> -->
+  <form id="messageForm">
+    <fieldset>
+      <legend>User data</legend>
+      <label for="userName">User name:</label>
+      <input type="text" name="message" placeholder="your message">
+  
+      <label for="userName">message:</label>
+      <input type="text" name="message" placeholder="your message"> 
+    </fieldset>
 
-          <label for="breed">Breed</label>
-          <input type="text" id="breed" />
+    <fieldset>
+      <legend>Contact info</legend>
+      <label for="userName">mobile number:</label>
+      <input type="text" name="message" placeholder="your message"> 
+  
+      <label for="userName">Email:</label>
+      <input type="text" name="message" placeholder="your message"> 
+    </fieldset>
 
-          <label for="likes">Likes</label>
-          <input type="text" id="likes" placeholder="list likes with , separated" />
 
-          <label for="cats">cats</label>
-          <input type="checkbox" id="cats" />
 
-          <label for="kids">kids</label>
-          <input type="checkbox" id="kids" />
 
-          <label for="dogs">dogs</label>
-          <input type="checkbox" id="dogs" />
-
-          <input type="submit" />
-        </fieldset>
-      </form>
-      
-      <section id="kitten-profiles"></section>
-    </main>
-    <footer></footer>
-    <script src="js/app.js"></script>
-  </body>
+    <input type="submit" value="send name">
+  </form>
+  <script src="./js/app.js"></script>
+</body>
 </html>
