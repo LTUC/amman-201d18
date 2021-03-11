@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+
+header nav h2{
+  font-size: 20px;
+}
+
+.row section:first-child{
+  background-color: #99a19c;
+  width:25%;
+
+}
+
+.row section:nth-child(2){
+  background-color: #b5b6bb;
+  width: 50%;
+  height: 71vh;
+  
+}
+.row section:nth-child(3){
+  background-color: #cdced3;
+  width:25%;
+
+}
+.column{
+  padding:20px;
+  float:left;
+}
+section p{
+font-size: 10px;
+}
+footer{
+  clear: both;
+  text-align: center;
+}
+footer h1{
+  font-family:cursive;
+  font-size: medium;
+}
+/* vh view height: */
+/* vw view width */
+/* 0% */
