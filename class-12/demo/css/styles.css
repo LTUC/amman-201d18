@@ -1,10 +1,10 @@
 body {
-  background: #eee;
+  background: #f2f4f8;
 }
 header {
   text-align: center;
-  border: 5px solid #c89737;
-  /* color: #f1f1f1; */
+  border: 5px solid #C89737;
+  color: #000;;
   margin-bottom: 40px;
 }
 header nav ul {
@@ -16,23 +16,22 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #f1f1f1;
+  color: #000;
   font-size: 25px;
   font-weight: 100;
 }
 header nav ul li a:hover {
-  color: #c89737;
+  color: #C89737;
 }
-#images-section {
+#imagesSection {
   max-width: 90%;
   margin: 0 auto;
   text-align: center;
 }
-
 img {
   width: 300px;
   height: 300px;
-  border: 10px solid #c89737;
+  border: 10px solid #C89737;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
