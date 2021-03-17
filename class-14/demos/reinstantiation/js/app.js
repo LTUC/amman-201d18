@@ -7,17 +7,22 @@ function Cat(name){
   this.name = name;
   Cat.all.push(this);
 }
+
 Cat.all = [];
+
 Cat.prototype.render = function(){
   const listItem = document.createElement('li');
   listItem.textContent = this.name;
   catList.appendChild(listItem);
-}
+};
+
+const newCat= new Cat('jone');
+
 
 function handleCatSubmit(e){
   e.preventDefault();
   const newCat = new Cat(e.target.catName.value);
-  console.log(newCat)
+  console.log(newCat);
   catForm.reset();
   newCat.render();
   localStorage.setItem('cats',JSON.stringify(Cat.all));

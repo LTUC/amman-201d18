@@ -5,8 +5,8 @@ img {
   object-fit: cover;
 }
 /*transform distorts elements from their original size/shape/position. 'transform' is the property name; it can have different values, like rotate, scale, skew, and translate (like relative positioning, translate moves it to a new place, relative to its old one)*/
-/* 
-#css:hover {
+
+/* #css:hover {
   transform: rotate(30deg);
 }
 
@@ -23,7 +23,7 @@ img {
 } */
 
 /* #css:hover {
-  transform: translateX(50px);
+  transform: translateX(50px); 
 }
 
 #html:hover {
@@ -54,7 +54,7 @@ there are three major properties to set when you use a transition:
 
 .rounding:hover {
   transition-property: border-radius, background-color;
-  transition-duration: 2s, 2s;
+  transition-duration: 2s,2s;
   transition-timing-function: linear, linear;
   border-radius: 50%;
   background-color: #f03c1d;
@@ -98,11 +98,11 @@ there are three major properties to set when you use a transition:
   }
   50% {
     /*opacity: 0;*/
-    color: #ffffff;
+    color: #cf2020;
   }
   100% {
     /*opacity: 1.0;*/
-    color: #000000;
+    color: #fbd605;
   }
 }
 
@@ -114,8 +114,8 @@ there are three major properties to set when you use a transition:
 }
 
 .animation {
-  background-color: #cccccc;
-  border: 2px solid #bbbbbb;
+  background-color: #b12f2f;
+  border: 2px solid #080707;
   border-radius: 3%;
   width: 400px;
   height: 400px;
@@ -123,24 +123,25 @@ there are three major properties to set when you use a transition:
 
 @keyframes moveRight {
   0% {
-    left: 0;
-    top: 0;
+    left: 0%;
+    top: 0%;
   }
   25% {
     left: 90%;
     top: 25%;
   }
+
   50% {
     left: 0%;
-    top: 50%;
+    top: 75%;
   }
   75% {
     left: 90%;
-    top: 75%;
+    top: 80%;
   }
   100% {
-    left: 0%;
-    top: 90%;
+    left: 45%;
+    top: 10%;
   }
 }
 
@@ -151,6 +152,7 @@ there are three major properties to set when you use a transition:
   animation-name: moveRight;
   width: 10%;
   height: 10%;
-  background-color: #0c8f16;
+  background-color: #f3af95;
   position: relative;
+  border-radius: 50%;
 }
